@@ -1,8 +1,7 @@
         <meta content="width=device-width, initial-scale=1" name="viewport"/>
         <meta charset="UTF-8">
-        <meta name="description" content="Admin Dashboard Template" />
-        <meta name="keywords" content="admin,dashboard" />
-        <meta name="author" content="stacks" />
+        <meta name="description" content="Page d'administration" />
+        <meta name="author" content="LMDA" />
         
         <!-- Styles -->
         <link href="assets/plugins/pace-master/themes/blue/pace-theme-flash.css" rel="stylesheet"/>
@@ -57,7 +56,7 @@
                         
                         <li class="droplink active open"><a href="#" class="waves-effect waves-button"><span class="menu-icon icon-grid"></span><p>News</p><span class="arrow"></span><span class="active-page"></span></a>
                             <ul class="sub-menu">
-                                <li class="active"><a href="table-data.html">Liste des articles</a></li>
+                                <li class="active"><a href="liste_news.php">Liste des articles</a></li>
                             </ul>
                         </li>
                     </ul>
