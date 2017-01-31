@@ -1,61 +1,86 @@
 /* ThemeColor */
-.thcolor,.thcolorhover:hover,.pg-section-title h2,.pg-pro-inner:hover figcaption h4 a,.next-prev-style .owl-nav div,
-.pg-blog-list ul li:hover .pg-time-zoon h5 a,.pg-large-blog ul li:hover .pg-blog-btn,.children li a:before,
-.pg-grid-blog .pg-blog-options li a:hover,.widget-tabnav li:hover a,.widget-tabnav li.active a,
-.pg-recent-blog > ul > li:hover h6 a,.widget-recent-news ul li:hover h6 a,.widget_categories ul li:hover a,
-.widget_categories ul li:hover a:before,.pg-related-blog ul li:hover h6 a,
-.pg-gallery ul li:hover h2 a,.player-nav li.active a,.fixer-pagination a:hover,.next-prev-style .owl-nav div {
-    color: #EA202E !important;
-}
+.thcolor, .thcolorhover:hover, .pg-section-title h2, .pg-pro-inner:hover figcaption h4 a, .next-prev-style .owl-nav div, .pg-blog-list ul li:hover .pg-time-zoon h5 a, .pg-large-blog ul li:hover .pg-blog-btn, .children li a:before, .pg-grid-blog .pg-blog-options li a:hover {
+  color: #0E903D !important; }
 
-.heading-12 span.left, .heading-12 span.right, .thbg-color,.thbg-colorhover:hover,.navbar-nav > li > a:before,.owl-nav div:hover,.pg-team-network li a:hover,
-.pg-team-list figure:hover figcaption h2 a,.pg-services ul li:hover .service-info,.pg-table thead,
-.pg-blog-list ul li:hover .pg-time-zoon time,.pg-blog-list ul li:hover .pg-time-zoon:before,.pg-bottom-footer,
-.children > li:hover > a,.pagination a:hover,.pagination span,.widget-tabnav li a:before,.widget-recent-news ul li:hover time,
-.pg-table caption,.shop-btn a:hover,.fixer-btn a:hover,.pg-underconstruction .pg-innersearch form input[type="submit"] {
-    background-color: #EA202E;
-}
-.next-prev-style .owl-nav div,
-.th-bordercolor,.th-bordercolorhover:hover,.kd-headbar,.pg-section-title h2,.owl-nav div:hover,
-.pg-team-list figure:hover figcaption h2 a,.next-prev-style .owl-nav div,.pg-table,
-.pg-simple-form ul li input[type="submit"],.children,.pg-grid-blog .pg-blog-info:before,.pg-modrenbtn:hover,
-.pg-widget-title h2,.widget-recent-news ul li:hover time,blockquote,.pg-inner-fixer,
-#koderespond form p input[type="button"],#koderespond form p input[type="submit"],.pg-header-three .navbar-nav > li > a::before {
-    border-color: #EA202E !important;
-}
+.widget-tabnav li:hover a, .widget-tabnav li.active a {
+  color: #0E903D !important; }
+
+.pg-recent-blog > ul > li:hover h6 a, .widget-recent-news ul li:hover h6 a {
+  color: #0E903D !important; }
+
+.widget_categories ul li:hover a {
+  color: #0E903D !important; }
+  .widget_categories ul li:hover a:before {
+    color: #0E903D !important; }
+
+.pg-related-blog ul li:hover h6 a, .pg-gallery ul li:hover h2 a, .player-nav li.active a, .fixer-pagination a:hover, .next-prev-style .owl-nav div {
+  color: #0E903D !important; }
+
+.heading-12 span.left, .heading-12 span.right {
+  background-color: #0E903D; }
+
+.thbg-color, .thbg-colorhover:hover, .navbar-nav > li > a:before, .owl-nav div:hover, .pg-team-network li a:hover, .pg-team-list figure:hover figcaption h2 a, .pg-services ul li:hover .service-info, .pg-table thead {
+  background-color: #0E903D; }
+
+.pg-blog-list ul li:hover .pg-time-zoon time, .pg-blog-list ul li:hover .pg-time-zoon:before {
+  background-color: #0E903D; }
+
+.pg-bottom-footer, .children > li:hover > a {
+  background-color: #0E903D; }
+
+.pagination a:hover, .pagination span {
+  background-color: #0E903D; }
+
+.widget-tabnav li a:before, .widget-recent-news ul li:hover time, .pg-table caption, .shop-btn a:hover, .fixer-btn a:hover, .pg-underconstruction .pg-innersearch form input[type="submit"] {
+  background-color: #0E903D; }
+
+.next-prev-style .owl-nav div, .th-bordercolor, .th-bordercolorhover:hover, .kd-headbar, .pg-section-title h2, .owl-nav div:hover, .pg-team-list figure:hover figcaption h2 a, .next-prev-style .owl-nav div, .pg-table, .pg-simple-form ul li input[type="submit"], .children, .pg-grid-blog .pg-blog-info:before, .pg-modrenbtn:hover, .pg-widget-title h2, .widget-recent-news ul li:hover time, blockquote, .pg-inner-fixer {
+  border-color: #0E903D !important; }
+
+#koderespond form p input[type="button"], #koderespond form p input[type="submit"] {
+  border-color: #0E903D !important; }
+
+.pg-header-three .navbar-nav > li > a::before {
+  border-color: #0E903D !important; }
+
 .tab-widget {
-    box-shadow: 0px 2px 0px 0px #EA202E,0px 2px 0px 0px #EA202E inset;
-}
+  box-shadow: 0px 2px 0px 0px #0E903D, 0px 2px 0px 0px #0E903D inset; }
 
+.pg-admin-post:before, .pg-result-list article:before, .pg-testimonial figure:before, .countdown-amount:before {
+  border-top-color: #0E903D; }
 
-.pg-admin-post:before,
-.pg-result-list article:before,
-.pg-testimonial figure:before,
-.countdown-amount:before{
-    border-top-color: #EA202E;
-}
 /* 2nd ThemeColor */
-.thcolortwo,.thcolortwohover:hover,.pg-medium-blog >ul >li:hover h5 a,.pg-medium-blog .pg-blog-options li a:hover {
-    color: #04275F;
-}
-.subheader-height:after{
-    border-bottom-color: #EA202E;
-}
-.subheader-height:before{
-    background: #EA202E;
-}
-.pg-subheader{
-	background:#04275F;
-}
-.thbg-colortwo,.thbg-colortwohover:hover,#mainbanner .flex-control-paging li a.flex-active,.pg-pro-inner:hover .pg-pro-info,
-.pg-medium-blog >ul >li:hover .medium-info time, .pg-caption h1{
-    background-color: #04275F;
-}
-.pg-caption h1:before, .pg-caption h1:after{
-	border-bottom-color: #04275F;
-}
+.thcolortwo, .thcolortwohover:hover {
+  color: #CCC; }
 
-.pg-modren-btn, .th-bordertwocolor,.th-bordercolortwohover:hover,.pg-medium-blog,.pg-medium-blog >ul >li:hover .medium-info time,
+.pg-medium-blog > ul > li:hover h5 a, .pg-medium-blog .pg-blog-options li a:hover {
+  color: #CCC; }
+
+.subheader-height:after {
+  border-bottom-color: #0E903D; }
+.subheader-height:before {
+  background: #0E903D; }
+
+.pg-subheader {
+  background: #CCC; }
+
+.thbg-colortwo, .thbg-colortwohover:hover, #mainbanner .flex-control-paging li a.flex-active, .pg-pro-inner:hover .pg-pro-info, .pg-medium-blog > ul > li:hover .medium-info time {
+  background-color: #CCC; }
+
+.pg-caption h1 {
+  background-color: #CCC; }
+  .pg-caption h1:before, .pg-caption h1:after {
+    border-bottom-color: #CCC; }
+
+.pg-modren-btn, .th-bordertwocolor, .th-bordercolortwohover:hover {
+  border-color: #CCC; }
+
+.pg-medium-blog {
+  border-color: #CCC; }
+  .pg-medium-blog > ul > li:hover .medium-info time {
+    border-color: #CCC; }
+
 .pg-loginform p input[type="submit"] {
-    border-color: #04275F;
-}
+  border-color: #CCC; }
+
+/*# sourceMappingURL=color.css.map */
