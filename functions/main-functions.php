@@ -6,7 +6,7 @@
     $dbhost = 'localhost';
     $dbname = 'blog';//Ne doit pas être modifié si vous avez appelé votre bdd "blog"
     $dbuser = 'root';
-    $dbpswd = 'root';
+    $dbpswd = '';
     //A partir d'ici, vous ne devez plus rien modifier
 
     try{
