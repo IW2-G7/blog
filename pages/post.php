@@ -55,7 +55,6 @@ if($post == false){
                                     <div class="text">
                                       <h4><a href="#"><?= $response->name ?></a></h4>
                                       <time datetime="<?= $reponse->date ?>">| <?= date("d/m/Y", strtotime($response->date)) ?></time>
-                                      <a href="#" class="replay-btn thcolor">Répondre</a>
                                       <p><?= nl2br($response->comment); ?></p>
                                     </div>
                                   </li>

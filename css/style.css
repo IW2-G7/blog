@@ -1458,8 +1458,7 @@ blockquote {
 .pg-subheader {
   float: left;
   width: 100%;
-  background-color: #eb1a1a;
-  height: 236px;
+  height: 150px;
   position: relative; }
 
 .subheader-height:before {

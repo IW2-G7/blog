@@ -32,12 +32,12 @@ function add_modo($name,$email,$role,$token){
 
     $subject = "Modo sur le blog";
     $message = '
-        <html lang="en" style="font-family: sans-serif;">
+        <html lang="fr" style="font-family: sans-serif;">
             <head>
                 <meta charset="UTF-8">
             </head>
             <body>
-                Voici votre identifiant et code unique à insérer sur <a href="http://tutos.dev/blog_2-0/admin/index.php?page=new">cette page</a>:
+                Voici votre identifiant et code unique à insérer sur <a href="admin/index.php?page=new">cette page</a>:
                 <br/>Identifiant: '.$email.'
                 <br/>Mot de passe: '.$token.'
                 <br/>Vous êtes: '.$role.'
@@ -48,7 +48,7 @@ function add_modo($name,$email,$role,$token){
 
     $header = "MIME-Version: 1.0\r\n";
     $header .= "Content-type: text/html; charset=UTF-8\r\n";
-    $header .= 'From: no-reply@nicwalle.com' . "\r\n" . 'Reply-To: contact@nicwalle.com' . "\r\n" . 'X-Mailer: PHP/' . phpversion();
+    $header .= 'From: waziri.diego@gmail.com' . "\r\n" . 'Reply-To: waziri.diego@gmail.com' . "\r\n" . 'X-Mailer: PHP/' . phpversion();
 
     mail($email,$subject,$message,$header);
 

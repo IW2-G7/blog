@@ -17,6 +17,8 @@
         include 'functions/'.$page.'.func.php';
     }
 
+    include 'functions/functions.php';
+
 ?>
 
 <!DOCTYPE html>

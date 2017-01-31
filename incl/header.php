@@ -16,7 +16,7 @@
             <div class="pg-navigation">
                 <ul>
                     <li class="last">
-                        <a href="#">Connexion</a>
+                        <a href="admin/index.php">Admin</a>
                     </li>
                 </ul>
             </div>

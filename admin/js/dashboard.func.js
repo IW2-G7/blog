@@ -1,6 +1,5 @@
 $(document).ready(function(){
 
-    $('.modal-trigger').leanModal();
 
     $(".see_comment").click(function(){
         var id = $(this).attr("id");
