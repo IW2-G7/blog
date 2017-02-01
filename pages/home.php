@@ -14,7 +14,7 @@
                         <div class="pg-caption">       
                             <h1><?= $post->title ?></h1>
                             <div class="clearfix"></div>        
-                          <p><?= substr(nl2br($post->content),0,140); ?>...</p>
+                          <p><?= substr($post->content, 0, 140); ?>...</p>
                           <div class="clearfix"></div>
                         </div>
                     </div>
