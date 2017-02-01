@@ -15,14 +15,12 @@ if($post == false){
             <section class="pg-pagesection">
               <div class="container">
                 <div class="row">
-
                     <div class="pg-pagecontent col-md-9">
-
                       <div class="pg-blog-list pg-fullwidth-blog">
                         <ul class="row">
                           <li class="col-md-12">
                             <div class="pg-time-zoon">
-                              <time datetime="2008-02-14 20:00">01<span>Fév</span></time>
+                              <time datetime="<?= $post->date ?>"><?= date("d", strtotime($post->date)) ?><span><?= date("M", strtotime($post->date)) ?></span></time>
                               <h1>
                                 <a href="#"><?= $post->title ?></a>
                               </h1>
@@ -107,17 +105,17 @@ if($post == false){
                                   ?>
                                     <li>
                                       <figure>
-                                          <a class="pg-recent-thumb" href="#">
-                                              <img src="http://s.psg.fr/psg/image/phototheque/g/317/63219.jpg" alt="">
+                                          <a class="pg-recent-thumb" href="index.php?page=post&id=<?= $post->id ?>">
+                                              <img src="img/posts/<?= $post->image ?>" alt="">
                                           </a>
                                         <figcaption>
                                           <h3> 
-                                              <a class="news_une" href="#">
-                                                  <span>Actu : </span>Meunier dévoile ses ambitions au PSG 
+                                              <a class="news_une" href="index.php?page=post&id=<?= $post->id ?>">
+                                                  <span><?= $post->title ?>
                                               </a>
                                           </h3>
-                                          <p>Thomas Meunier, arrivé pendant le mercato d'été ne déçoit pas à chaque fois qu'il joue. Il n'a pas connu la moindre défaite avec le PSG.</p>
-                                          <span class="time-news">Hier</span>
+                                          <p><?= substr(nl2br($post->content),0,140); ?>...</p>
+                                          <span class="time-news"><?= date("d/m", strtotime($post->date)) ?></span>
                                       </figure>
                                     </li>
                                   <?php
@@ -137,9 +135,7 @@ if($post == false){
 
 <?php
 }
-?>
 
-<?php
     if(isset($_POST['submit'])){
         $name = htmlspecialchars(trim($_POST['name']));
         $email = htmlspecialchars(trim($_POST['email']));

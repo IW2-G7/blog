@@ -3180,4 +3180,8 @@ a.news_une {
 .btn-pref .btn {
   -webkit-border-radius: 0 !important; }
 
+  .parallax img {
+    display: block !important;
+  }
+
 /*# sourceMappingURL=style.css.map */

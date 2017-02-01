@@ -44,7 +44,7 @@
                                   <li class="col-md-4">
                                         <div class="pg-time-zoon"></div>
                                         <figure>
-                                            <a href="#">
+                                            <a href="index.php?page=post&id=<?= $post->id ?>">
                                                 <img src="img/posts/<?= $post->image ?>" alt="<?= $post->title ?>" title="<?= $post->title ?>">
                                             </a>
                                         </figure>

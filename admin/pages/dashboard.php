@@ -23,7 +23,7 @@ foreach($posts as $post){
     ?>
     <tr>
         <td><?php echo ($post->posted == "0") ? "Non publié" : "Publié" ?></td>
-        <td><a href="../index.php?page=post&id=<?= $post->id ?>"><?= $post->title ?></a></td>
+        <td><a href="index.php?page=post&id=<?= $post->id ?>"><?= $post->title ?></a></td>
         <td><?= substr(nl2br($post->content),0,30) ?></td>
         <td><?= $post->writer ?></td>
     <tr>
