@@ -79,8 +79,6 @@ if(admin()!=1){
                     add_modo($name,$email,$role,$token);
                 }
             }
-
-
         ?>
 
         <form method="post">

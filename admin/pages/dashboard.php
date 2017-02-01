@@ -24,7 +24,7 @@ foreach($posts as $post){
     <tr>
         <td><?php echo ($post->posted == "0") ? "Non publié" : "Publié" ?></td>
         <td><a href="index.php?page=post&id=<?= $post->id ?>"><?= $post->title ?></a></td>
-        <td><?= substr(nl2br($post->content),0,30) ?></td>
+        <td><?= substr($post->content,0,30) ?></td>
         <td><?= $post->writer ?></td>
     <tr>
     <?php
@@ -33,7 +33,8 @@ foreach($posts as $post){
 ?>
 </table>
 
-<h4>Commentaires non lus</h4>
+<h2>Commentaires non lus</h2>
+<hr>
 <?php
     $comments = get_comments();
 ?>
@@ -98,6 +99,53 @@ foreach($posts as $post){
                 <tr>
                     <td></td>
                     <td><center>Aucun commentaire à valider</center></td>
+                </tr>
+            <?php
+        }
+        ?>
+
+<h2>Tous les commentaires</h2>
+<hr>
+<?php
+    $allcomments = get_all_comments();
+?>
+<table>
+    <thead>
+        <tr>
+            <th>Article</th>
+            <th>Commentaire</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php
+        if(!empty($allcomments)) {
+            foreach ($allcomments as $commentaire) {
+                ?>
+                <tr id="commentaire_<?= $comment->id ?>">
+                    <td><?= $commentaire->title ?></td>
+                    <td><?= substr($commentaire->comment, 0, 100); ?>...</td>
+                    <td>
+                        <div class="modal" id="comment_<?= $commentaire->id ?>">
+                            <div class="modal-content">
+                                <h4><?= $commentaire->title ?></h4>
+
+                                <p>Commentaire posté par
+                                    <strong><?= $commentaire->name . " (" . $commentaire->email . ")</strong><br/>Le " . date("d/m/Y à H:i", strtotime($commentaire->date)) ?>
+                                </p>
+                                <hr/>
+                                <p><?= nl2br($commentaire->comment) ?></p>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+            <?php
+            }
+        }else{
+            ?>
+                <tr>
+                    <td></td>
+                    <td><center>Aucun commentaire</center></td>
                 </tr>
             <?php
         }

@@ -5,10 +5,10 @@ $pages = scandir('pages/');
 if(isset($_GET['page']) && !empty($_GET['page'])){
     if(in_array($_GET['page'].'.php',$pages)){
         $page = $_GET['page'];
-    }else{
+    } else {
         $page = "error";
     }
-}else{
+} else {
     $page = "dashboard";
 }
 
@@ -27,7 +27,6 @@ if(in_array($page.'.func.php',$pages_functions)){
     <title>Le Meilleur de l'Actualité</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
-
 <body>
 
 <?php
@@ -37,11 +36,12 @@ if($page != 'login' && $page != 'new' && !isset($_SESSION['admin'])){
 }
 
 include "incl/header.php";
+
 ?>
 
 <div class="container">
     <?php
-    include 'pages/'.$page.'.php';
+        include 'pages/'.$page.'.php';
     ?>
 </div>
 
@@ -51,6 +51,7 @@ include "incl/header.php";
 <script type="text/javascript" src="../js/script.js"></script>
 
 <?php
+
 $pages_js = scandir('js/');
 if(in_array($page.'.func.js',$pages_js)){
     ?>

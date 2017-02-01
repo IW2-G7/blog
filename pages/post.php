@@ -7,7 +7,7 @@ if($post == false){
 
     ?>
         </div>
-<div class="pg-wrapper">
+      <div class="pg-wrapper">
         <?php include('incl/header.php') ?>
           <div class="pg-subheader">
           </div>
@@ -113,7 +113,7 @@ if($post == false){
                                                   <span><?= $post->title ?>
                                               </a>
                                           </h3>
-                                          <p><?= substr(nl2br($post->content),0,140); ?>...</p>
+                                          <p><?= substr($post->content,0,140); ?>...</p>
                                           <span class="time-news"><?= date("d/m", strtotime($post->date)) ?></span>
                                       </figure>
                                     </li>
@@ -149,7 +149,6 @@ if($post == false){
             }
         }
 
-
         if(!empty($errors)){
             ?>
                 <div class="card red">
@@ -162,7 +161,7 @@ if($post == false){
                     </div>
                 </div>
             <?php
-        }else{
+        } else {
             comment($name,$email,$comment);
             ?>
                 <script>
