@@ -22,7 +22,7 @@ if($post == false){
                         <ul class="row">
                           <li class="col-md-12">
                             <div class="pg-time-zoon">
-                              <time datetime="2008-02-14 20:00">17 <span>sept</span></time>
+                              <time datetime="2008-02-14 20:00">01<span>Fév</span></time>
                               <h1>
                                 <a href="#"><?= $post->title ?></a>
                               </h1>
