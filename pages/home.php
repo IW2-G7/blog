@@ -1,12 +1,11 @@
 <div class="pg-wrapper">
 <?php include 'incl/header.php'; ?>
-
     <div id="mainbanner">
         <div class="flexslider">
             <ul class="slides">
             <?php
-            $posts = get_posts();
-            foreach($posts as $post){
+            $posts = get_posts_news();
+            foreach($posts as $post) {
             ?>
                 <li>
                     <img src="img/posts/<?= $post->image ?>" alt="" />
@@ -36,7 +35,7 @@
                                     <h2>Toute l'actualité du Web</h2>
                                 </div>
                                 <?php
-                                    $posts = get_posts();
+                                    $posts = get_posts_news();
                                     foreach($posts as $post){
 
                                         $date = $post->date;
@@ -65,6 +64,6 @@
                         </ul>
                       </div>
                     </div>
-            </div>
-        </section>      
+                </div>
+            </section>      
       </div>

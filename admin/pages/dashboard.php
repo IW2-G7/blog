@@ -3,7 +3,6 @@
 if(hasnt_password() == 1){
     header("Location:index.php?page=password");
 }
-
 ?>
 
 <h2>Liste des articles</h2>
@@ -29,7 +28,6 @@ foreach($posts as $post){
     <tr>
     <?php
 }
-
 ?>
 </table>
 
@@ -83,17 +81,12 @@ foreach($posts as $post){
                                    class="modal-action modal-close waves-effect waves-green btn-flat see_comment"><i
                                         class="material-icons">done</i></a>
                             </div>
-
-
                         </div>
-
-
                     </td>
                 </tr>
-
             <?php
             }
-        }else{
+        } else {
             ?>
                 <tr>
                     <td></td>
