@@ -54,7 +54,7 @@
                                                 <a href="index.php?page=post&id=<?= $post->id ?>"><?= $post->title ?></a>
                                             </h3>
                                           
-                                            <p><?= substr(nl2br($post->content),0,140); ?>...</p>
+                                            <p><?= substr($post->content,0,160); ?>...</p>
                                               
                                             <div class="clearfix"></div>
                                         </div>

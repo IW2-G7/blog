@@ -26,8 +26,7 @@ if($post == false){
                               </h1>
                             </div>
                             <figure>
-                              <a href="#">
-                                <img src="img/posts/<?= $post->image ?>" alt="<?= $post->title ?>" title="<?= $post->title ?>"></a>
+                                <img src="img/posts/<?= $post->image ?>" alt="<?= $post->title ?>" title="<?= $post->title ?>">
                             </figure>
                           </li>
                           

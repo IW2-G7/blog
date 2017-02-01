@@ -1051,7 +1051,15 @@
   .pg-blog-list figure img {
     float: left;
     width: 100%;
-    margin: 0px; }
+    margin: 0px;
+  }
+
+  .pg-blog-list figure a img {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    height: 300px;
+  }
 
 .pg-blog-info {
   float: left;
@@ -1066,10 +1074,6 @@
 .pg-recent-blog ul li:hover figcaption p {
   display: block; }
 
-.pg-blog-list ul li p {
-  display: none; }
-.pg-blog-list ul li:hover p {
-  display: block; }
 
 .pg-recent-blog ul figcaption .time-news {
   float: right;
@@ -1207,7 +1211,8 @@ blockquote {
     margin-bottom: 30px; }
 
 #kodecomments ul {
-  padding-left: 0; }
+  padding-left: 0;
+margin-bottom: 50px;}
   #kodecomments ul ul.children {
     padding-left: 0; }
 
@@ -3183,5 +3188,10 @@ a.news_une {
   .parallax img {
     display: block !important;
   }
-
+  
+.thbg-color {
+    background: RGB(14, 144, 61);
+    color: #fff;
+    padding: 10px;
+}
 /*# sourceMappingURL=style.css.map */
