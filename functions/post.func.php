@@ -8,11 +8,8 @@ function get_post(){
                 posts.title,
                 posts.image,
                 posts.content,
-                posts.date,
-                admins.name
+                posts.date
         FROM posts
-        JOIN admins
-        ON posts.writer = admins.email
         WHERE posts.id='{$_GET['id']}'
         AND posts.posted = '1'
     ");
