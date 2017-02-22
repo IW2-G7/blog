@@ -13,7 +13,6 @@ function get_posts_news(){
 
     return $results;
 
-
 }
 
 function get_posts(){
@@ -25,14 +24,11 @@ function get_posts(){
                 posts.title,
                 posts.image,
                 posts.date,
-                posts.content,
-                admins.name
+                posts.content
         FROM posts
-        JOIN admins
-        ON posts.writer=admins.email
         WHERE posted='1'
         ORDER BY date DESC
-        LIMIT 0,2
+        LIMIT 0,4
 
     ");
 

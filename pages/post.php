@@ -1,16 +1,15 @@
+<?php include('incl/header.php') ?>
 <?php
 
 $post = get_post();
+
 if($post == false){
     header("Location:index.php?page=error");
 } else {
-
-    ?>
+?>
         </div>
-<div class="pg-wrapper">
-        <?php include('incl/header.php') ?>
-          <div class="pg-subheader">
-          </div>
+      <div class="pg-wrapper">
+          <div class="pg-subheader"></div>
           <div class="pg-content">
             <section class="pg-pagesection">
               <div class="container">
@@ -26,8 +25,7 @@ if($post == false){
                               </h1>
                             </div>
                             <figure>
-                              <a href="#">
-                                <img src="img/posts/<?= $post->image ?>" alt="<?= $post->title ?>" title="<?= $post->title ?>"></a>
+                                <img src="img/posts/<?= $post->image ?>" alt="<?= $post->title ?>" title="<?= $post->title ?>">
                             </figure>
                           </li>
                           
@@ -83,7 +81,7 @@ if($post == false){
                                         </p>
                                     </div>
 
-                                    <div class="col s12">
+                                    <div class="col-md-12">
                                         <button type="submit" name="submit" class="thbg-color">
                                             Commenter ce post
                                         </button>
@@ -100,7 +98,7 @@ if($post == false){
                               </div>
                               <ul>
                                   <?php
-                                    $postsA = get_posts();
+                                    $postsA = get_posts_news();
                                     foreach($postsA as $post){
                                   ?>
                                     <li>
@@ -114,7 +112,7 @@ if($post == false){
                                                   <span><?= $post->title ?>
                                               </a>
                                           </h3>
-                                          <p><?= substr(nl2br($post->content),0,140); ?>...</p>
+                                          <p><?= substr($post->content,0,140); ?>...</p>
                                           <span class="time-news"><?= date("d/m", strtotime($post->date)) ?></span>
                                       </figure>
                                     </li>
@@ -150,7 +148,6 @@ if($post == false){
             }
         }
 
-
         if(!empty($errors)){
             ?>
                 <div class="card red">
@@ -163,7 +160,7 @@ if($post == false){
                     </div>
                 </div>
             <?php
-        }else{
+        } else {
             comment($name,$email,$comment);
             ?>
                 <script>
@@ -171,7 +168,5 @@ if($post == false){
                 </script>
             <?php
         }
-
     }
-
 ?>

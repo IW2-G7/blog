@@ -12,8 +12,6 @@ function get_posts(){
     }
 
     return $results;
-
-
 }
 
 
@@ -27,11 +25,8 @@ function get_post(){
                 posts.image,
                 posts.date,
                 posts.content,
-                posts.posted,
-                admins.name
+                posts.posted
         FROM posts
-        JOIN admins
-        ON posts.writer = admins.email
         WHERE posts.id = '{$_GET['id']}'
     ");
 
