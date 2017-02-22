@@ -6,7 +6,7 @@ function post($title,$content,$posted){
     $p = [
         'title'     =>  $title,
         'content'   =>  $content,
-        'writer'    =>  $_SESSION['admin'],
+        'writer'    =>  "Administrateur",
         'posted'    =>  $posted
 
     ];

@@ -1,5 +1,6 @@
 <?php
     include 'functions/main-functions.php';
+    include 'functions/functions.php';
 
     $pages = scandir('pages/');
     if(isset($_GET['page']) && !empty($_GET['page'])){
@@ -15,10 +16,8 @@
     $pages_functions = scandir('functions/');
     if(in_array($page.'.func.php',$pages_functions)){
         include 'functions/'.$page.'.func.php';
+        echo $page;
     }
-
-    include 'functions/functions.php';
-
 ?>
 
 <!DOCTYPE html>

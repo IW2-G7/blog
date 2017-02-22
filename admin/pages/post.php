@@ -1,10 +1,5 @@
 <?php
 
-    if(admin()!=1){
-        header("Location:index.php?page=dashboard");
-    }
-
-
     $post = get_post();
     if($post == false){
         header("Location:index.php?page=error");
@@ -87,10 +82,5 @@
                 <button type="submit" class="btn" name="submit">Modifier l'article</button>
 
             </div>
-
-
         </div>
-
-
-
     </form>

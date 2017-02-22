@@ -1,3 +1,4 @@
+        <?php include('incl/header.php') ?>
 <?php
 
 $post = get_post();
@@ -5,10 +6,9 @@ if($post == false){
     header("Location:index.php?page=error");
 } else {
 
-    ?>
+?>
         </div>
       <div class="pg-wrapper">
-        <?php include('incl/header.php') ?>
           <div class="pg-subheader">
           </div>
           <div class="pg-content">
@@ -99,7 +99,7 @@ if($post == false){
                               </div>
                               <ul>
                                   <?php
-                                    $postsA = get_posts();
+                                    $postsA = get_posts_news();
                                     foreach($postsA as $post){
                                   ?>
                                     <li>
