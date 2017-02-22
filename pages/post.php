@@ -1,16 +1,15 @@
-        <?php include('incl/header.php') ?>
+<?php include('incl/header.php') ?>
 <?php
 
 $post = get_post();
+
 if($post == false){
     header("Location:index.php?page=error");
 } else {
-
 ?>
         </div>
       <div class="pg-wrapper">
-          <div class="pg-subheader">
-          </div>
+          <div class="pg-subheader"></div>
           <div class="pg-content">
             <section class="pg-pagesection">
               <div class="container">
@@ -82,7 +81,7 @@ if($post == false){
                                         </p>
                                     </div>
 
-                                    <div class="col s12">
+                                    <div class="col-md-12">
                                         <button type="submit" name="submit" class="thbg-color">
                                             Commenter ce post
                                         </button>
@@ -169,7 +168,5 @@ if($post == false){
                 </script>
             <?php
         }
-
     }
-
 ?>

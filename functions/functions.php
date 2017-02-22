@@ -13,7 +13,6 @@ function get_posts_news(){
 
     return $results;
 
-
 }
 
 function get_posts(){
@@ -26,7 +25,7 @@ function get_posts(){
                 posts.image,
                 posts.date,
                 posts.content,
-                admins.name
+                admins.email
         FROM posts
         JOIN admins
         ON posts.writer=admins.email

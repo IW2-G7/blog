@@ -9,10 +9,6 @@
                 </ul>
             </div>
 
-            <div class="logo">
-                <a href="index.php" class="logo"></a>
-            </div>
-
             <div class="pg-navigation">
                 <ul>
                     <li class="last">

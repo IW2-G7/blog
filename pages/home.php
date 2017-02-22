@@ -1,26 +1,25 @@
 <div class="pg-wrapper">
 <?php include 'incl/header.php'; ?>
-
     <div id="mainbanner">
         <div class="flexslider">
             <ul class="slides">
-            <?php
-            $posts = get_posts();
-            foreach($posts as $post){
-            ?>
+                <?php
+                $posts = get_posts();
+                foreach($posts as $post){
+                ?>
                 <li>
                     <img src="img/posts/<?= $post->image ?>" alt="" />
                     <div class="container">
                         <div class="pg-caption">       
                             <h1><?= $post->title ?></h1>
                             <div class="clearfix"></div>        
-                          <p><?= substr($post->content, 0, 140); ?>...</p>
+                            <p><?= substr($post->content, 0, 140); ?>...</p>
                           <div class="clearfix"></div>
                         </div>
                     </div>
                 </li>
                 <?php
-            }
+                }
                 ?>
             </ul>
         </div>
@@ -36,12 +35,12 @@
                                     <h2>Toute l'actualité du Web</h2>
                                 </div>
                                 <?php
-                                    $posts = get_posts();
+                                    $posts = get_posts_news();
                                     foreach($posts as $post){
 
                                         $date = $post->date;
                                 ?>
-                                  <li class="col-md-4">
+                                    <li class="col-md-4">
                                         <div class="pg-time-zoon"></div>
                                         <figure>
                                             <a href="index.php?page=post&id=<?= $post->id ?>">
@@ -58,13 +57,13 @@
                                               
                                             <div class="clearfix"></div>
                                         </div>
-                                  </li>
+                                    </li>
                                 <?php
                                     }
                                 ?>
-                        </ul>
-                      </div>
+                            </ul>
+                        </div>
                     </div>
-            </div>
+                </div>
         </section>      
-      </div>
+    </div>

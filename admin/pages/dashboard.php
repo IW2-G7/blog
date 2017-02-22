@@ -1,4 +1,4 @@
-<h2>Liste des articles</h2>
+<p>Liste des articles</p>
 <hr/>
 
 <table>
