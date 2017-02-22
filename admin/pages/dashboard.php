@@ -1,15 +1,5 @@
-<<<<<<< HEAD
-<?php
 
-if(hasnt_password() == 1){
-    header("Location:index.php?page=password");
-}
-?>
-
-<h2>Liste des articles</h2>
-=======
 <p>Liste des articles</p>
->>>>>>> 005e68ef21e2e7467dbbb4bb03a2f51ed9386d71
 <hr/>
 
 <table>
@@ -74,17 +64,6 @@ foreach($posts as $post){
                                 <p><?= nl2br($comment->comment) ?></p>
 
                             </div>
-<<<<<<< HEAD
-                            <div class="modal-footer">
-                                <a href="#" id="<?= $comment->id ?>"
-                                   class="modal-action modal-close waves-effect waves-red btn-flat delete_comment"><i
-                                        class="material-icons">delete</i></a>
-                                <a href="#" id="<?= $comment->id ?>"
-                                   class="modal-action modal-close waves-effect waves-green btn-flat see_comment"><i
-                                        class="material-icons">done</i></a>
-                            </div>
-                        </div>
-=======
                         </div>
                     </td>
                 </tr>
@@ -130,7 +109,6 @@ foreach($posts as $post){
                                 <p><?= nl2br($commentaire->comment) ?></p>
                             </div>
                         </div>
->>>>>>> 005e68ef21e2e7467dbbb4bb03a2f51ed9386d71
                     </td>
                 </tr>
             <?php

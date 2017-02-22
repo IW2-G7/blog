@@ -3,17 +3,10 @@
     <div id="mainbanner">
         <div class="flexslider">
             <ul class="slides">
-<<<<<<< HEAD
             <?php
             $posts = get_posts_news();
             foreach($posts as $post) {
             ?>
-=======
-                <?php
-                $posts = get_posts();
-                foreach($posts as $post){
-                ?>
->>>>>>> 005e68ef21e2e7467dbbb4bb03a2f51ed9386d71
                 <li>
                     <img src="img/posts/<?= $post->image ?>" alt="" />
                     <div class="container">
@@ -72,10 +65,5 @@
                         </div>
                     </div>
                 </div>
-<<<<<<< HEAD
-            </section>      
-      </div>
-=======
         </section>      
     </div>
->>>>>>> 005e68ef21e2e7467dbbb4bb03a2f51ed9386d71
